@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section.pagina1, section.pagina2, section.pagina3, section.pagina4, section.pagina5 {
+    max-width: 1440px;
+    height: 1024px;
+    margin: auto;
+}
+
+section.pagina1, section.pagina5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.pagina1 div.testo, section.pagina5 div.testo {
+    padding: 50px 50px;
+}
+
+section.pagina1 div.testo h1 {
+    font-size: 96px;
+    font-weight: 400;
+}
+
+section.pagina2, section.pagina3, section.pagina4 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-bottom: 40px;
+}
+
+section.pagina2 div.testo, section.pagina3 div.testo, section.pagina4 div.testo {
+    padding: 0 20px 0 20px;
+}
+
+section.pagina2 div.testo h2, section.pagina3 div.testo h2, section.pagina4 div.testo h2 {
+    font-size: 64px;
+    margin-bottom: 100px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+section.pagina2 div.testo p, section.pagina3 div.testo p, section.pagina4 div.testo p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+section.pagina2 div.immagine img, section.pagina3 div.immagine img, section.pagina4 div.immagine img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+section.pagina2 div.immagine, section.pagina3 div.immagine, section.pagina4 div.immagine {
+    padding-left: 20px;
+}
+
+section.pagina5 p {
+    font-size: 55px;
+}
+
+@media (max-width:1100px) {
+    section.pagina1 div.testo h1 {
+        font-size: 80px;
+    }
+
+    section.pagina5 div.testo p {
+        font-size: 50px;
+    }
+    
+    section.pagina2, section.pagina3, section.pagina4 {
+        grid-template-columns: 60% 40%;
+    }
+
+    section.pagina2 div.testo h2, section.pagina3 div.testo h2, section.pagina4 div.testo h2 {
+        font-size: 60px;
+    }
+
+    section.pagina2 div.testo p, section.pagina3 div.testo p, section.pagina4 div.testo p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:770px) {
+    section.pagina1, section.pagina2, section.pagina3, section.pagina4, section.pagina5 {
+        height: 900px;
+    }
+    
+    section.pagina1 div.testo h1 {
+        font-size: 70px;
+    }
+
+    section.pagina5 div.testo p {
+        font-size: 42px;
+    }
+
+    section.pagina2 div.testo h2, section.pagina3 div.testo h2, section.pagina4 div.testo h2 {
+        font-size: 48px;
+        margin-bottom: 60px;
+    }
+
+    section.pagina2 div.testo p, section.pagina3 div.testo p, section.pagina4 div.testo p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:670px) {
+    section.pagina1, section.pagina2, section.pagina3, section.pagina4, section.pagina5 {
+        height: 800px;
+    }
+    
+    section.pagina1 div.testo h1 {
+        font-size: 52px;
+    }
+
+    section.pagina5 div.testo p {
+        font-size: 30px;
+    }
+
+    section.pagina2 div.testo h2, section.pagina3 div.testo h2, section.pagina4 div.testo h2 {
+        font-size: 38px;
+        margin-bottom: 60px;
+    }
+
+    section.pagina2 div.testo p, section.pagina3 div.testo p, section.pagina4 div.testo p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:570px) {
+    section.pagina1, section.pagina5 {
+        height: 400px;
+    }
+
+    section.pagina2, section.pagina3, section.pagina4 {
+        height: 1200px;
+    }
+
+    section.pagina2, section.pagina3, section.pagina4 {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 40px;
+    }
+    
+    section.pagina1 div.testo h1 {
+        font-size: 46px;
+    }
+
+    section.pagina5 div.testo p {
+        font-size: 26px;
+    }
+
+    section.pagina2 div.testo h2, section.pagina3 div.testo h2, section.pagina4 div.testo h2 {
+        font-size: 34px;
+        margin-bottom: 50px;
+    }
+
+    section.pagina2 div.testo p, section.pagina3 div.testo p, section.pagina4 div.testo p {
+        font-size: 16px;
+    }
+
+    section.pagina2 div.immagine, section.pagina3 div.immagine, section.pagina4 div.immagine {
+        padding: 0 20px 20px 20px;
+    }
+}
